@@ -1,0 +1,68 @@
+---
+Title: Elementos de Navegação
+Weight: 51
+---
+
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: /images/en/user
+
+= Elementos de Navegação
+
+A capacidade de visualizar e navegar facilmente para áreas do CRM é essencial para produtividade aprimorada e engajamento do usuário. O SuiteCRM possui uma interface clara que possui vários elementos que abordaremos nesta seção.
+
+== Menu de navegação superior
+
+O menu de navegação superior é o menu principal que os usuários usarão para navegar até os módulos para criar e gerenciar registros. O layout padrão para o topo navegação é uma lista de 10 módulos. A ordenação para este menu é determinada pela ordem dos módulos em Admin → Exibir módulos e Subpainéis. O menu de navegação superior possui seis elementos. Esses são:
+
+* * Nome do CRM * - Este é o nome do CRM especificado em instalação. O padrão é SuiteCRM.
+* * Module Menu * - lista ou agrupa os módulos, dependendo da preferência do usuário . Isso fornece aos usuários a capacidade de navegar para os módulos
+dentro do CRM.
+* * Contagem de notificações da área de trabalho * - mostra o número de notificações de áreas de trabalho
+que o usuário ainda não leu. Estes podem ser gerenciados pelo utilizador. Para obter detalhes completos sobre as Notificações da área de trabalho, consulte a seção link:../desktop-notifications/[Desktop Notifications] dentro deste guia de usuario.
+* * Criação rápida * - A criação rápida permite a criação registros em modulos mesmo sem acessar diretamente a seção desse módulo, isto é, cria novo registro de um determinado módulo de qualquer lugar no CRM.
+* * Pesquisa de texto global / completo * - Permite que os usuários pesquisem no CRM globalmente por
+registros / dados.
+* * Menu do usuário * - exibe o nome do usuário atualmente conectado. Existe um menu suspenso que dá aos usuários acesso aos funcionários,
+seu perfil, a página sobre, e um link para sair.
+image:17Navigation_menu.png[title="Top Navigation Menu"]
+
+Para visualizar um módulo, você pode clicar no nome do módulo. Isso levará você para a exibição em lista desse módulo. Para obter detalhes completos sobre as visualizações, leia a seção link:../views/[Views] deste guia do usuário.
+
+Passar o mouse sobre o nome de um módulo produzirá um menu suspenso. Esse menu suspenso exibe as Ações e os registros Exibidos recentemente para esse módulo.
+
+image:18Dropdown_menu.png[title="Drop-down Menu"]
+
+Você pode editar os registros exibidos na seção Exibido recentemente do menu suspenso clicando no ícone de lápis. Isso o direcionará para o Editar visualização para esse registro.
+
+image:19Recently_viewed.png[title="Edit Recently Viewed"]
+
+Há também uma estrutura de navegação de guias agrupada para o SuiteCRM. Os usuários podem definir esta opção em suas preferências. Para obter detalhes completos sobre a modificação das preferências do usuário, consulte a seção link:/user/introduction/managing-user-accounts[Managing User Accounts]
+deste guia do usuário.
+
+image:20.png[title="Grouped Tabs"]
+
+O menu de navegação da guia agrupada oferece ao usuário a capacidade de agrupar módulos em uma guia como a guia Vendas.
+image:21Grouped_tab.png[title="Grouped Tab"]
+
+== Criação rápida
+
+Você pode clicar no ícone 'criar' no menu de navegação superior para acessar o Opções de criação rápida. Esta é uma lista dos módulos comumente usados ​​com o capacidade de criar novos registros dentro desses módulos a partir de qualquer local.
+
+image:22Quick_create.png[title="Quick Create"]
+
+== Barra lateral
+
+A barra lateral faz parte do tema responsivo e é configurável pelo usuário. A barra lateral pode ser expandida e recolhida clicando no botão destacado abaixo.
+
+image:23Sidebar.png[title="Sidebar"]
+
+=== Ações
+
+Isso exibe as ações do módulo que você está visualizando no momento. Para, por exemplo, se você estiver visualizando o módulo Contas, as ações que
+são exibidas: Criar conta, Exibir contas, Importar contas. Isto fornece acesso com um clique às ações do módulo.
+
+=== Visto Recentemente
+
+Esta seção exibe os últimos 10 registros que você visualizou. Isso deixa uma trilha de navegação para que os registros visualizados anteriormente possam ser rápida e
+facilmente acessado pela barra lateral. Há também a opção de clicar no ícone de lápis, que o levará diretamente para a Visualização de edição do registro.
