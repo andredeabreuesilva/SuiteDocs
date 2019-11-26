@@ -1,0 +1,103 @@
+---
+Title: Assistente de Usuário
+Weight: 30
+---
+
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: ./../../../images/en/user
+
+= Assistente de Usuário
+
+O Assistente de Utilizador guia-o através das opções de configuração disponíveis
+para o usuário logado. Isso permite que você selecione muitos formatos de dados que
+serão exibidos no SuiteCRM, e estes são específicos para o seu usuário.
+
+== Bem-vindo ao SuiteCRM
+
+O primeiro passo que você vai ver é uma simples página de boas-vindas exibida uma vez
+você entrou. Clique em btn:[Próximo] nesta página para progredir para configurar
+suas preferências de usuário.
+
+image:04SuiteCRM_welcome.png[title="Welcome to SuiteCRM!"]
+
+== Suas informações
+
+Nesta tela, você pode fornecer informações pessoais. Quando
+você fornece essas informações, outros usuários podem ver essas informações, 
+assim como seu nome completo, endereço de e-mail e detalhes de contato. 
+Campos marcados com um asterisco vermelho (*) são campos obrigatórios e, 
+como tal, precisam ser preenchidos com dados válidos antes de progredir.
+
+image:05Welcome_info.png[title="User Information"]
+
+Depois de preencher todas as informações desta página, clique em btn:[Avançar] 
+para avançar ao próximo passo no assistente.
+
+== Sua localidade
+
+Nesta tela, você pode especificar suas configurações de localidade preferidas.
+
+image:06SuiteCRM_Locale.png[title="Locale Settings"]
+
+== Seleção de Moeda
+
+Selecione a moeda que você deseja exibir para todos os campos de moeda
+no SuiteCRM. As opções de moeda são preenchidas a partir das opções
+adicionadas pelo administrador do sistema. Se houver opções de moeda, você
+exigir, mas não vê, entre em contato com o administrador do sistema.
+
+image:180Currency_selection.png[title="Currency Selection"]
+
+== Formato da Data
+
+Selecione o formato da data que você deseja exibir para todos os campos da data
+no SuiteCRM. Existem muitas opções diferentes de formato de data para selecionar,
+todos específicos para seu usuário. Esse formato de data também
+se aplica aos campos Data e hora.
+
+image:08Date_format.png[title="Date Format"]
+
+== Fuso Horário
+
+Selecione o fuso horário que você deseja usar no SuiteCRM. Isso permite que você
+personalize seu uso do SuiteCRM específico para onde você está localizado
+globalmente. Se você estiver viajando entre vários países, poderá alterar
+a Zona de Horário a qualquer momento nas Preferências do Usuário após a 
+instalação do Assistente, para permitir visualizar registros nesse fuso horário.
+
+image:09Time_zone.png[title="Time Zone"]
+
+== Formato do nome
+
+Selecione o formato de nome que você deseja exibir para todos os campos de nome
+no SuiteCRM. Isso é aplicável aos vários módulos 'Pessoa'
+no SuiteCRM e permite definir seu formato de nome preferido
+dependente de sua exigência.
+
+image:181Name_format.png[title="Name Format"]
+
+Depois de especificar todas as suas preferências de localidade, clique em 
+btn: [Avançar] e avance para a etapa final / página de confirmação
+do Assistente do Usuário.
+
+== Passo final
+
+A etapa final do Assistente de usuário fornece vários recursos úteis
+links para aprender mais e obter mais suporte do SuiteCRM
+site e equipe dedicada. Existe um botão btn: [Back] se você tiver feito
+quaisquer erros que você deseja corrigir nas etapas anteriores.
+
+image:241Finish User Wizard.png[title="Finish User Wizard"]
+
+Clicar em btn: [Concluir] concluirá o Assistente do usuário e apresentará a você
+com o formulário de login do SuiteCRM.
+
+== Sumário
+
+Neste capítulo, progredimos no Assistente de usuário. Isso permite você
+definir suas preferências ao usar o SuiteCRM.
+
+No próximo capítulo, abordaremos o gerenciamento de contas de usuário, quando
+discutiremos como atualizar detalhes do usuário, selecionar temas, 
+alterar senhas e mais.
