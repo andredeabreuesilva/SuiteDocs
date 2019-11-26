@@ -1,11 +1,11 @@
 ---
-Title: "Introduction"
+Title: "Introdução"
 Weight: 10
 ---
 
-:imagesdir: /images/en/user
+:imagesdir: /images/pt/user
 
-= Introduction
+= Introducção
 
 == The SuiteCRM Team and Community
  
