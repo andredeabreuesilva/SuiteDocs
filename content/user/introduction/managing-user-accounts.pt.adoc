@@ -1,0 +1,161 @@
+---
+Title: Gerenciando contas de usuário
+Weight: 40
+---
+
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: /images/en/user
+
+:toc:
+
+= Gerenciando contas de usuário
+
+Existem muitas opções de configuração disponíveis para os usuários, uma vez logado
+o sistema. Você pode visualizar / modificar suas preferências clicando no seu
+nome na seção superior direita do menu de navegação.
+
+image:11User_select.png[title="Manage Account"]
+
+== Guia Perfil do Usuário
+
+Depois de clicar para acessar suas preferências, você será levado para
+a guia "Perfil do usuário", que fornece uma visão geral de suas credenciais, assim
+como nome de usuário, sobrenome, título etc.
+
+image:12User_profile.png[title="User Profile"]
+
+
+=== Configurações de conta de email pessoal
+
+A configuração de uma conta de email pessoal no * SuiteCRM * permite exibir contas de email pessoais dentro
+do modulo link:../../core-modules/emails[Emails].  
+
+Os emails de caixas de correio pessoais não são armazenados no banco de dados * SuiteCRM *, 
+a menos que importados manualmente. Veja a documentação do módulo link:../../core-modules/emails[Emails] para maiores informações.
+
+{{% notice tip %}}
+Usuários individuais podem configurar suas próprias contas pessoais. Os administradores podem configurar contas pessoais para outros usuários da seção Gerenciamento de usuários do painel Admin.
+{{% /notice %}}
+
+==== Configurações de email do perfil de usuário
+
+Abra o perfil do usuário e role até a parte inferior da guia principal * Perfil do usuário * para visualizar as configurações de correio. Observe que se você estiver definindo as configurações de correio para outro usuário, será necessário selecionar * Editar * no menu * Ações * para ver essas configurações.
+
+image:270Emailusersettings.png[User Email Settings]
+
+* *Endereço de email * - adicione o(s) endereço(s) de email para sua conta * SuiteCRM *. Clique em btn: [+] para adicionar mais endereços. Quando você possui mais de um endereço de e-mail, pode especificar qual é o endereço principal da sua conta usando o botão de opção * Principal *.
+Você também pode especificar qual conta usar como conta de resposta.
+* *Email Client * - Essa configuração controla qual editor é usado para compor e enviar email quando você clica em um link de email no SuiteCRM, por exemplo, um endereço de email em um contato ou registro de conta.
+	** * SuiteCRM Email Editor * - O editor do módulo * SuiteCRM * * Emails * será usado
+	** *External Email Editor * - Com o editor de email externo definido, os links de email no * SuiteCRM * serão abertos em qualquer cliente de email que você configurou para abrir os links `mailto: //`, por exemplo, Outlook ou Thunderbird
+
+* *Editor de email * - Permite definir o editor usado ao criar e editar edição link:../../core-modules/emailtemplates[modelos de email] e também dentro do módulo 
+link:../../core-modules/campaigns[Campanhas]. Observe que a configuração * Email Editor * não afeta a exibição do móduoo de *Composição  SuiteCRM Emails *. No momento, essa configuração não pode ser definida pelo usuário. As opções disponíveis são *Mozaik*, *TinyMCE* e *Direct HTML*.
+
+==== Adicionando uma conta de email pessoal
+
+Clique no botão btn:[CONFIGURAÇÕES] na parte inferior da guia principal Perfil de usuário para adicionar uma conta de e-mail pessoal.
+
+Selecione a guia Contas de email e clique em btn: [ADICIONAR] em Contas de email para configurar sua conta de email de entrada.
+image:271EmailsAddPersonalAccount.png[Guia Contas de email]
+
+Preencha os detalhes necessários para a conta na caixa de diálogo exibida. Você precisará do nome de usuário e senha da conta que está adicionando, além do endereço do servidor de correio. O protocolo de email suportado pelo * SuiteCRM * é IMAP. Você também pode precisar definir a Porta do servidor de email se isso diferir da configuração IMAP padrão. O administrador do sistema deve poder fornecer essas configurações.
+
+Depois de inserida, você pode verificar suas configurações de e-mail clicando em btn: [TESTE DE CONFIGURAÇÕES] para testar a conexão com a conta.
+image:272EmailsPersonalAccountSettings.png[User Email Settings] 
+
+* Pastas monitoradas: * são as pastas marcadas para novos emails (não lidos). Você deve especificar uma pasta * Caixa de entrada * e * Lixeira * aqui. Digite os nomes das pastas ou clique em btn: [SELECIONAR] para conectar-se ao servidor de correio e selecione as pastas relevantes na caixa de diálogo pop-up.
+image:273EmailsMonitoredFolders.png[Select monitored folders]
+
+*Assinaturas: * Selecione uma assinatura para esta conta. Isso será adicionado automaticamente ao corpo do email ao compor um email usando o módulo Emails. Se você deseja criar uma nova assinatura, precisará fazer isso a partir do <<User Mail Settings - General Tab, Guia geral>> and then select it here. Isso substituirá a configuração padrão no <<User Mail Settings - General Tab, Guia geral>>.
+
+Conclua as configurações * Email de saída * da conta do usuário.
+
+image:276EmailsAddPersonalAccount2.png[User Outgoing Mail Settings]
+
+Clique em btn: [FEITO] para salvar as configurações da conta e retornar à guia * Contas de Email *. 
+
+image:275EmailsAccountList.png[Accounts List]
+Se você tiver mais de uma conta configurada, poderá configurar a conta padrão para aparecer quando abrir o módulo * Emails *. As contas definidas como ativas estarão disponíveis para seleção.
+
+Edite as configurações da conta de email pessoal clicando no ícone de lápis na coluna Editar.
+
+==== Configurações de correio do usuário - guia Geral
+
+Existem outras configurações para o correio na * Guia Geral *:
+
+image:274EmailsGeneralTab.png[User Mail Settings General tab]
+
+* * Verificar novo email * - Aqui você pode especificar um intervalo de tempo para verificar automaticamente novos emails nas pastas monitoradas da sua conta. A configuração padrão é verificar e-mails manualmente, usando o botão Verificar e-mail na exibição da lista E-mails.
+
+* * Assinatura padrão * - Opção para especificar a assinatura padrão que será adicionada ao corpo do email quando um novo email for composto. Clique em btn: [CRIO] para adicionar um novo ou selecione um da lista. As assinaturas existentes podem ser editadas e excluídas aqui.
+
+* * Gerenciamento de pastas * - selecione as pastas que estarão disponíveis para visualização no módulo * E-mails *. Esta lista mostrará todas as pastas monitoradas de todas as contas de email às quais você tem acesso. Use ctrl + clique para selecionar mais de uma pasta.
+
+Clique em btn: [FEITO] para salvar suas configurações. Uma caixa de diálogo de confirmação será exibida.
+
+Agora você deve poder ver seus e-mails no módulo link:../../core-modules/emails[*Emails*.
+
+
+
+== Guia Senha
+
+Ao clicar na guia '* Senha *', você navegará para permitir a alteração
+da senha da sua conta de usuário. Para alterar sua senha, especifique uma nova
+senha e confirme a nova senha. Recomenda-se que as senhas
+estejam seguras. O requisito mínimo recomendado é uma letra maiúscula
+caractere, um caractere minúsculo, um caractere numérico e um
+comprimento mínimo da senha de 8 caracteres.
+
+image:13Password_tab.png[title="Password Tab"]
+
+Se você esqueceu sua senha e não pode fazer login, você pode usar o
+funcionalidade de senha esquecida detalhada na seção
+link:/user/introduction/getting-started[Começando] deste guia do usuário.
+
+== Guia Avançado
+
+A guia Avançado fornece as preferências que você definiu durante
+o processo do Assistente de Usuário. Isso permite alterar qualquer um dos
+suas preferências de usuário, se houver algum erro ou se você precisar
+alterá-los em uma data posterior.
+
+image:14Advanced_tab.png[title="Advanced Tab"]
+
+== Redefinindo as preferências do usuário
+
+Você pode redefinir suas preferências do usuário para o padrão do sistema clicando em
+o botão btn: [Redefinir preferências do usuário] no seu perfil.
+
+image:15User_preference.png[title="Reset User Preferences"]
+
+Clicar no botão solicitará que você deseje redefinir sua senha.
+preferências do usuário, com a seguinte mensagem: _ “Tem certeza de que deseja
+redefinir todas as suas preferências de usuário? "_
+
+{{% notice warning %}}
+Isso também fará com que você saia do aplicativo. Você pode clicar em 'OK' ou 'Cancelar' para agir
+adequadamente. Se você selecionar 'OK', será desconectado e precisará efetuar login novamente no aplicativo SuiteCRM.
+{{% /notice %}}
+
+== Redefinindo uma página inicial de Usuários
+
+Você pode redefinir sua página inicial para o padrão do sistema clicando btn:[Redefinir página inicial] no seu perfil. Isso redefinirá tanto os dashlets
+e preferências/layouts do painel para o padrão do sistema.
+
+image:16Reset_homepage.png[title="Reset Homepage"]
+
+Clicar no botão solicitará que você deseje redefinir sua senha.
+home page, com a seguinte mensagem: _ “Tem certeza de que deseja redefinir sua
+pagina inicial?"_. Você pode clicar em 'OK' ou 'Cancelar' para agir
+adequadamente.
+
+== Resumo
+
+Neste capítulo, abordamos o gerenciamento de uma conta de usuário. Isso permite que você
+gerenciar suas informações, modificar / redefinir as preferências do usuário e muito mais.
+
+No próximo capítulo, abordaremos a interface. A interface é um
+parte integrante do SuiteCRM. Com o conhecimento da sua interface, você pode
+progredir para aprender mais sobre a funcionalidade e os processos do SuiteCRM.
