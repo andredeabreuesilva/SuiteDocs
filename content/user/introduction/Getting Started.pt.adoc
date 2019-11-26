@@ -1,0 +1,49 @@
+---
+Title: Começando
+Weight: 20
+---
+
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: ./../../../images/en/user
+
+= Começando
+
+== Fazendo login no SuiteCRM
+
+O SuiteCRM permite que os usuários efetuem login usando seu nome de
+usuário e senha, fornecidos pelo administrador do sistema.
+
+image:190Home_screen.png[title="Home Screen"]
+
+image:02Login_with_language.png[title="Language Select"]
+
+Antes de entrar no SuiteCRM, você pode selecionar o idioma que deseja
+usar. Existem muitos idiomas padrão para SuiteCRM e há também
+pacotes de idiomas adicionais disponíveis para outras línguas em torno do
+mundo.
+
+Depois de ter escolhido o seu idioma e ter inserido o seu usuário
+credenciais, você será capaz de clicar em btn:[Entrar] para acessar o
+CRM.CRM.
+
+image:191Log_in.png[title="Log in"]
+
+== Senha esquecida
+
+Se você esquecer sua senha CRM e não puder acessar sua conta de usuário CRM,
+você pode usar o recurso 'Esqueci minha Senha' para re-enviar sua senha para
+o endereço de email associado à sua conta de utilizador. Ao clicar no link *'
+Esqueceu Senha? '* no formulário de login irá exibir o formulário abaixo:
+
+image:179Forgot_password.png[title="Forgotten Password"]
+
+== Resumo
+
+Neste capítulo, demonstramos como acessar o SuiteCRM usando o
+formulário de login. Também estabelecemos como usar a funcionalidade 
+de Senha Esquecida para recuperar uma senha de usuário caso a senha
+tenha sido perdida ou esquecida.
+
+No próximo capítulo, abordaremos o Assistente de Usuário, que permite que você
+defina suas preferências ao usar o SuiteCRM.
