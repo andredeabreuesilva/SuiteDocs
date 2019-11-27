@@ -1,0 +1,95 @@
+---
+Title: Visualizações
+Weight: 54
+---
+
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: /images/en/user
+
+:toc:
+
+= Visualizações
+
+Dentro do CRM, você verá várias Visualizações. Essas Visualizações são
+estruturadas para apresentar as principais informações por meio do processo de gerenciamento de registtros. Existem três Visualizações principais, descritas nas
+subseções abaixo.
+
+== Exibição de lista
+
+Esta é a visão que você recebe quando navega para o seu
+módulo desejado.
+
+image:40List_view.png[title="List View"]
+
+A exibição em lista fornece acesso a muitas ações que você pode executar para
+gerenciar registros. Esses são:
+
+* * Search Records * - fornece a capacidade de executar tarefas básicas e
+pesquisas avançadas, conforme abordado anteriormente no seção link:../search/[Search]
+deste capítulo.
+* * Classificar registros * - clicar no nome da coluna classificará a lista de registros
+por essa coluna, crescente ou decrescente, se a classificação estiver ativada.
+* * Exibir registros * - clicar em qualquer dado com hiperlink o levará ao
+Visualização de detalhes do registro.
+* * Editar registros * - clicar no ícone de lápis o levará até o menu Editar para esse registro.
+* * Excluir registros * - você pode selecionar registros e depois selecionar
+opção para excluir registros do módulo.
+* * Mass Update Records * - você pode selecionar registros e depois selecionar  a opção massa
+de atualização para atualizar dados em todos os registros selecionados.
+* * Mesclar registros * - você pode selecionar registros e selecionar a opção de mesclagem.
+Isso iniciará os processos de mesclagem de registros. Você pode selecionar um registro primário
+e, em seguida, pode mesclar os dados dos registros duplicados no
+registro primário. Uma vez salvos, os registros duplicados serão excluídos e
+todos os dados / histórico mesclados ao registro primário.
+
+== Visualização de detalhes
+
+Esta é a visão que você recebe quando visualiza um registro.
+
+image:41Detail_view.png[title="Detail View"]
+
+A Visualização de detalhes compreende várias ações que você pode usar para
+visualizar / gerenciar seus dados. Eles são específicos para a Visualização de detalhes do
+módulo que você está visualizando. Existem ações padrão no detalhe
+Veja a maioria dos módulos. Esses são:
+
+* * Editar * - permite editar o registro que você está visualizando.
+* * Duplicar * - permite duplicar o registro que está visualizando.
+* * Excluir * - permite excluir o registro que você está visualizando. Se um registro
+for excluído, você será redirecionado para a Exibição em lista.
+* * Find Duplicates * - permite iniciar o processo de encontrar duplicatas
+onde você pode usar a funcionalidade do sistema para encontrar registros duplicados.
+* * Visualizar registro de alterações * - permite visualizar alterações nos campos auditados.
+
+{{% notice note %}}
+Nota: Para definir os campos como auditados e para que quaisquer alterações encontrem duplicatas,
+entre em contato com o administrador do sistema.
+{{% /notice %}}
+
+É possível clicar nos campos com hiperlink. Isso o levará até aquele
+registro.
+
+A Visualização de detalhes é exibida no SuiteCRM. Isso significa que há um mínimo
+de rolagem de dados são categorizados para cada módulo na aba.
+
+{{% notice note %}}
+Os administradores de sistema podem optar por exibir dados nas duas guias
+ou painéis. Você pode entrar em contato com o administrador do sistema para obter mais informações.
+informações sobre como gerenciar layouts e visualizações.
+{{% /notice %}}
+
+== Editar visualização
+
+Essa é a visão que você recebe ao editar um registro.
+
+image:42Edit_view.png[title="Edit View"]
+
+A Visualização de Edição permite modificar as informações de registro exibidas.
+na vista. Isso permite que os usuários atualizem os dados existentes e também
+adicionar / remover dados. Depois de fazer alterações na Visualização de edição, você pode
+clique em 'Salvar' para aplicar as alterações ou clique em btn: [Cancelar]. Clicando em
+qualquer das opções o redirecionarão para a Visualização detalhada do registro em que você está.
+Você pode clicar no botão btn: [Visualizar registro de alteração]. Isso permite que os usuários
+a visualizar alterações nos campos auditados que podem ser úteis antes de fazer sua
+mudanças pretendidas.
