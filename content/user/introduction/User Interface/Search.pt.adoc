@@ -1,0 +1,107 @@
+---
+Title: Pesquisar
+Weight: 53
+---
+
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: /images/en/user
+
+= Pesquisar
+
+A pesquisa é um aspecto vital no CRM, pois isso permite que você rapidamente
+defina o que você quer ver. Muitos CRMs terão grandes conjuntos de dados
+portanto, é vital que você tenha uma maneira de refinar sua pesquisa. No
+subseções a seguir, abordaremos as várias opções de pesquisa
+disponível para você.
+
+== Pesquisa global
+
+Você pode pesquisar todos os registros no CRM usando a funcionalidadep de esquisa global. Você pode procurar registros através da pesquisa global usando o
+barra de pesquisa no menu de navegação principal.
+
+image:38Search.png[title="Global Search"]
+
+Depois de inserir seu termo de pesquisa, você pode pressionar a tecla Enter ou
+clique no ícone da lupa / pesquisa. Isso retornará registros que
+corresponda aos critérios de pesquisa e categorize-os pelos módulos disponíveis.
+
+image:39Search.png[title="Global Search results"]
+
+Módulos podem ser adicionados à funcionalidade de pesquisa global pelo
+Administrador do sistema.
+
+== Pesquisa de texto completo
+
+O SuiteCRM tem uma opção para ativar ou desativar uma pesquisa global em texto completo.
+A pesquisa global em texto completo é fornecida por
+http://framework.zend.com/manual/1.12/en/zend.search.lucene.overview.html[Zend
+Lucene] search framework. A pesquisa funciona muito semelhante ao padrão de
+pesquisa global, mas fornece a funcionalidade aprimorada da pesquisa de texto
+em documentos e outros arquivos, em comparação com a pesquisa em nível de registro
+fornecida pela pesquisa global padrão.
+
+{{% notice note %}}
+Os administradores de sistema podem ativar / desativar a pesquisa de texto completo
+clicando no link Configurações do AOD no painel do administrador.
+{{% /notice %}}
+
+image:169AOD_Settings.png[title="AOD Settings"]
+
+Isso exibirá a opção AOD para ativar / desativar a pesquisa de texto completo.
+
+image:170Enable_AOD.png[title="Enable AOD"]
+
+A pesquisa retorna resultados ligeiramente diferentes da pesquisa global. Resultados
+são retornados em ordem de pontuação. Os registros são pontuados dependendo de quão bem
+você corresponde aos critérios de pesquisa fornecidos por você - de 0 a 100%.
+
+image:171Search_results.png[title="Full Text Search"]
+
+== Pesquisa básica do módulo
+
+A pesquisa básica está disponível em todos os módulos do CRM. Pesquisa básica,
+como padrão, permite que os usuários pesquisem o nome do registro.
+
+image:193Search_button.png[title="Basic Module Search button"]
+
+image:194Search_box.png[title="Basic Module Search"]
+
+A pesquisa básica também permite que os usuários marquem a caixa de seleção "Meus itens".
+A ativação dessa opção retornará apenas os registros atribuídos a você.
+
+image:195Search_my_items.png[title="Search my items"]
+
+Depois que um usuário pesquisar um registro, a pesquisa será salva. este
+significa que você pode navegar para registros e outros módulos no CRM
+mas a pesquisa não será limpa. Se você deseja limpar sua pesquisa,
+você pode clicar em btn: [Limpar] e, em seguida, clique em btn: [Pesquisar]. Isso limpará qualquer pesquisa salva e retornará o conjunto de resultados padrão para esse módulo.
+
+{{% notice note %}}
+Os administradores de sistema podem modificar no Studio, quais campos de um determinado módulo são pesquisáveis pela Pesquisa básica .
+{{% /notice %}}
+
+== Pesquisa avançada de módulos
+
+A Pesquisa avançada está disponível em todos os módulos do CRM. A
+A pesquisa vançada fornece uma funcionalidade de pesquisa de módulo mais detalhada. Assim, por padrão, existem mais campos disponíveis na Pesquisa avançada.
+
+image:196Advanced_search.png[title="Advanced Module Search"]
+
+Pesquisas avançadas podem ter muitos campos e critérios específicos. Por esta
+razão, você pode salvar seus critérios de pesquisa avançada para preencher facilmente
+isso no futuro.
+
+image:197Save_search.png[title="Save search"]
+
+Para carregar uma pesquisa salva, você pode selecionar a pesquisa salva na 
+Lista suspensa de 'Meus filtros'. Isso retornará resultados que correspondem aos critérios
+especificados na pesquisa salva.
+
+image:198Saved_search.png[title="Saved searches"]
+
+{{% notice note %}}
+Os administradores de sistema podem modificar no Studio em quais campos são pesquisáveis
+Pesquisa Avançada.
+{{% /notice %}}
+
