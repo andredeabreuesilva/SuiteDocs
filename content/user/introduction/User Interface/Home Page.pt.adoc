@@ -1,0 +1,129 @@
+---
+Title: Home Page
+Weight: 52
+---
+
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: /images/en/user
+
+= Home Page
+
+A página Home é a primeira página exibida para você
+pós-autenticação. A página inicial possui vários elementos que podem ser usados
+e configurado como Dashlets, Dashboards e a Barra Lateral.
+
+== Dashlets
+
+Dashlets são seções configuráveis ​​pelo usuário exibidas na página inicial que
+fornecem uma visão geral rápida de seus registros e atividades imediatamente após você
+entrar. Isso é particularmente útil para equipes lideradas por vendas e suporte, pois
+isso reduz o número de cliques necessários para visualizar / modificar dados.
+
+Os dashlets podem ser arrastados / soltados dentro da página inicial. Você pode adicionar
+dashlets clicando no link 'Adicionar dashlets' na página inicial.
+
+image:24Add_dashlets.png[title="Add Dashlets"]
+
+Clicar no link 'Adicionar dashlets' na página inicial abrirá o pop-up 
+Adicionar Dashlets, que permite aos usuários selecionar entre uma infinidade de
+dashlets na caixa.
+
+image:25Add_dashlets.png[title="Dashlet Selection"]
+
+Para adicionar um dos dashlets, basta clicar no link do dashlet. Isso vai
+adicione o dashlet à página inicial do usuário. O pop-up permanecerá se você adicionar
+um dashlet, para permitir que os usuários adicionem várias dashlets. Depois de adicionar
+dashlets necessários, você pode fechar o pop-up.
+
+image:26Dashlet.png[title="Dashlet"]
+
+Você pode modificar dashlets clicando no ícone de lápis no
+dashlet.
+
+image:27Modify_dashlet.png[title="Modify dashlet"]
+
+Clicar no ícone de lápis exibirá um pop-up. Este pop-up conterá
+todas as opções configuráveis ​​para o dashlet.
+
+image:28Configure_dashlet.png[title="Configure dashlet"]
+
+Depois de fazer as alterações necessárias na configuração do
+pop-up dashlet, você pode clicar em btn:[Salvar] para aplicar as alterações ou em btn:[Cancelar] se desejar
+para reverter para a configuração atual.
+
+{{% notice note %}}
+Alguns dashlets exigem que a página inicial seja recarregada. Para dashlets
+que exigem isso, você será notificado.
+{{% /notice %}}
+
+== Dashboards
+
+Os painéis são novos no SuiteCRM. Eles são configuráveis ​​por usuário e podem
+ser adicionado / removido semelhante ao dashlets. Para adicionar uma guia do painel, você pode
+clique na "guia Adicionar " na página inicial.
+
+image:29Add_tab.png[title="Add tab"]
+
+Clicar no link "Adicionar guia" na página inicial abrirá a guia Adicionar
+pop-up que permite aos usuários especificarem um nome para a guia e também quantas
+colunas de dashlet são necessárias. Você pode optar por uma, duas ou três colunas.
+
+image:192Add_tab.png[title="Add tab"]
+
+Depois de especificar os detalhes da guia do painel, você pode clicar em
+BTN: [Salvar]. Você também pode clicar em btn: [Cancelar] para desfazer as alterações. Uma vez que você tenha
+salvo suas alterações, a guia Painel será adicionada e exibida no
+a lista de guias na página inicial do usuário. Você pode adicionar Dashlets ao seu novo
+guia do painel.
+
+image:31New_tab.png[title="New tab"]
+
+Se você deseja excluir a guia do painel, pode clicar no ícone 'x'.
+Isso solicitará que você confirme a exclusão e, posteriormente,
+remova a guia do painel apenas do seu perfil.
+
+{{% notice note %}}
+*Suite Dashboard*
+é a guia padrão do painel que não pode ser removida. Você pode, no entanto
+configurar os dashlets exibidos nessa guia do painel.
+{{% /notice %}}
+
+== Fluxo de Atividades
+
+O Fluxo de Atividades é uma excelente maneira de acompanhar suas
+interações com seus colegas no SuiteCRM. Por padrão, o Fluxo de Atividades
+exibe atualizações recentes para as oportunidades, contatos, leads e o módulo de Casos. Os feeds do Facebook e Twitter da sua organização também podem ser
+incluídos nos seus Dashlets de Fluxos de Atividade, se desejado, e isso pode ser
+configurável por um usuário Adminisgtrador.
+
+image:32Activity_stream.png[title="Activity stream"]
+
+Você também pode comentar sobre uma atualização no Fluxo de Atividades,
+clicando no botão Responder no lado direito da postagem.
+
+image:33Reply.png[title="Reply to post"]
+
+Suas postagens também podem ser excluídas do fluxo de atividades clicando em
+o botão Excluir.
+
+image:34Delet3.png[title="Delete post"]
+
+Seu comentário aparecerá na postagem original e também será registrada com a data e hora.
+
+O Fluxo de atividades também é uma ferramenta útil para mensagens internas dentro
+sua organização, é possível enviar uma mensagem que será
+transmitida para todos os usuários da sua rede. Para fazer isso, digite sua mensagem em
+no campo de texto e clique em btn: [Postar]
+
+image:35Activity_post.png[title="Activity Stream post"]
+
+Seus colegas verão esta mensagem e poderão responder por
+clicando no botão Responder no lado direito da postagem.
+
+image:36Reply.png[title="Activity Stream reply"]
+
+A resposta deles aparecerá na sua postagem, novamente com um registro de data e hora.
+
+image:37Reply_view.png[title="Post reply"]
+
