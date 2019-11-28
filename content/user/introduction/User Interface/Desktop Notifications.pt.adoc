@@ -1,0 +1,55 @@
+---
+Title: Notificações da área de trabalho
+Weight: 57
+---
+
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: /images/en/user
+
+= Notificações da área de trabalho
+
+== Ativando notificações da área de trabalho
+
+Você pode ativar as notificações da área de trabalho acessando a guia * 'Avançado' *
+dentro de suas preferências do usuário. Isso permitirá notificações na área de trabalho
+somente para esse navegador no computador. você pode optar por ativar o
+notificações da área de trabalho apenas para essa sessão do navegador ou para sempre ativar
+notificações da área de trabalho.
+
+{{% notice note %}}
+Os usuários terão que ativar as notificações da área de trabalho em todos os navegadores
+e computadores se você usar mais de um.
+{{% /notice %}}
+
+image:199Enable_desktop_notifications.png[title="Enable Desktop Notifications"]
+
+Depois que as notificações da área de trabalho estiverem ativadas, os usuários receberão
+notificações para eventos do Calendário, como:
+
+* * Reuniões * - Reuniões para as quais você foi convidado com lembretes pop-up
+conjunto.
+* * Chamadas * - As chamadas para as quais você foi convidado com lembretes pop-up definidos.
+
+== Gerenciando notificações da área de trabalho
+
+Se você não tiver notificações, a contagem de notificações mostrará '0' para
+informar que você atualmente não tem notificações para verificar.
+
+image:65Managing_notifications.png[title="Notifications"]
+
+Se você não clicar em uma notificação da área de trabalho quando for exibida em
+no navegador, por exemplo, você está o AFK (Away From Keyboard-Afastado do Teclado) suas
+notificações serão adicionadas à lista de notificações que aparecem como um
+conteador na barra de navegação principal.
+
+image:66Managing_notifications.png[title="Managing Notifications"]
+
+Você pode gerenciar as notificações da área de trabalho clicando no ícone que
+mostrará todas as notificações existentes.
+
+image:67Managing_notifications.png[title="Display notifications"]
+
+Você pode clicar na notificação que o levará ao registro ao qual
+a notificação está relacionada ou você pode clicar no pequeno ícone 'x' para
+limpar as notificações imediatamente.
