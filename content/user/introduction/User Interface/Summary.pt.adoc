@@ -1,0 +1,17 @@
+---
+Title: Sumário
+Weight: 58
+---
+
+:imagesdir: /images/en/user
+
+= Sumário
+
+Neste capítulo, abordamos todos os elementos da interface do usuário do SuiteCRM.
+Existem muitos elementos que você pode usar para otimizar sua navegação
+e gerenciamento de dados, para aumentar a produtividade.
+
+No próximo capítulo, veremos os módulos. Módulos são as entidades de dados
+no SuiteCRM que podem ser independentes ou relacionadas a um ou
+muitos outros módulos. Cada módulo tem uma função diferente, mas muitos
+os módulos trabalham juntos para estruturar e automatizar os processos de negócios do dia a dia.
