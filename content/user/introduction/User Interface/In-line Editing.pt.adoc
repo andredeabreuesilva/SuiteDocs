@@ -1,0 +1,71 @@
+---
+Title: Edição em linha
+Weight: 56
+---
+
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: /images/en/user
+
+= Edição em linha
+
+A edição em linha permite alterar valores "on the fly".
+A edição em linha foi implementada nas telas Lista e Detalhe,
+fornecendo uma vantagem para os usuários que desejam alterar os valores dos campos rapidamente,
+reduzindo o número de cliques / processos que normalmente seriam levados para
+edite o registro completo.
+
+{{% notice note %}}
+A edição em linha pode ser ativada / desativada para a Exibição em lista e
+Vista de detalhes. Isso pode ser feito nas principais configurações do sistema do CRM,
+pelo administrador do sistema.
+{{% /notice %}}
+
+image:186In-line_editing.png[title="Enable In-line Editing"]
+
+== Edição em linha Exibição em lista
+
+Você pode editar as informações de registro na exibição em lista de um módulo usando
+edição em linha clicando em um campo onde o ícone de lápis é mostrado.
+
+image:60ListView_editing.png[title="List View In-line Editing"]
+
+Você pode clicar no ícone de lápis ou clicar duas vezes no campo para
+edite o valor.
+
+image:61ListView_editing.png[title="List View edit field"]
+
+Depois de fazer a alteração necessária no valor do campo, você pode
+pressione Retornar ou clique no 'tick'. Isso salvará suas alterações.
+Se você sair sem salvar as alterações, verá uma solicitação
+avisando que você fez alterações não salvas no campo sendo
+editado.
+
+image:image71.png[image71.png,title="image71.png"]
+
+Você pode clicar em * Cancelar * e continuar editando e salvando suas alterações,
+ou você pode clicar em * OK *, que descartará as alterações feitas.
+
+== Visualização de detalhes Edição em linha
+
+Semelhante à exibição em lista, você pode editar as informações do registro na exibição de detalhes
+de um módulo usando edição em linha clicando em um campo onde o
+ícone de lápis é mostrado.
+
+image:62DetailView_Editing.png[title="Detail View In-line Editing"]
+
+Você pode clicar no ícone de lápis ou clicar duas vezes no campo para
+edite o valor.
+
+image:63DetailView_editing.png[title="Detail View edit field"]
+
+Depois de fazer a alteração necessária no valor do campo, você pode
+pressione Return ou clique no 'tick'. Isso salvará as alterações do usuário.
+Se você sair sem salvar as alterações, verá uma solicitação
+avisando que você fez alterações não salvas no campo sendo
+editado.
+
+image:image74.png[title="Unsaved Changes Warning"]
+
+Você pode clicar em * Cancelar * e continuar editando e salvando suas alterações,
+ou você pode clicar em * OK *, que descartará as alterações feitas.
