@@ -1,0 +1,28 @@
+---
+Title: Calendário
+Weight: 110
+---
+
+= Calendário
+
+O módulo Calendário no SuiteCRM permite que você gerencie seu tempo,
+agendamento de reuniões, chamadas e tarefas. Os usuários podem compartilhar seus calendários para
+e permitir que outras pessoas vejam suas próximas atividades. Estas atividades serão exibidas no módulo Calendário, uma vez que o Usuário
+interessado é um participante ou a tarefa foi atribuída a ele.
+
+== Ações do calendário
+
+Você pode acessar as ações do Calendário no menu suspenso do módulo Calendário
+para baixo ou pela barra lateral. As ações do calendário são as seguintes:
+
+* * Agendar reuniões * - Um novo formulário é aberto na Visualização de edição do
+Módulo de reuniões para permitir que você crie um novo registro de reunião. Esse registro
+será exibido no calendário.
+* * Programar chamadas * - Um novo formulário é aberto na Visualização de edição da chamada.
+módulo para permitir que você crie um novo registro de chamada. Este registro será
+exibido no calendário.
+* * Criar tarefa * - Um novo formulário é aberto na Visualização de edição das tarefas
+módulo para permitir que você crie um novo registro de tarefa. Este registro será
+exibido no calendário.
+* * Hoje * - Redireciona você para o formato Dia do Calendário para o
+dia atual.
