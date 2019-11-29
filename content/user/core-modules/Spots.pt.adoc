@@ -1,0 +1,76 @@
+---
+Title: Spots
+Weight: 220
+---
+
+
+:experimental: //// this is here to allow btn:[] syntax used below
+
+:imagesdir: /images/en/user
+
+
+= Spots
+
+Este módulo permite que você apresente rapidamente esses sistemas na forma de tabelas ou gráficos de resumo.
+
+== Crie um Spot
+
+ . No menu do módulo, selecione * Criar boletim *.
+ . Preencha as informações básicas:
+
+Spots :: O nome do Spot que está sendo criado.
+Escopo da análise: selecione a área de dados na qual
+o resumo será baseado. Os itens de lista propostos podem
+apresentado como um módulo específico (por exemplo, contatos preliminares),
+ou de uma só vez por vários módulos (por exemplo, Eventos apresentados
+Chamadas, Reuniões e Tarefas) e permite a você compilar pontos de resumo bastante complexos.
+Configuração :: É representado por duas caixas de combinação e campos de dados.
+Na primeira caixa de combinação, você pode escolher como apresentar os dados no
+forma de vários tipos de tabelas ou gráficos. Na segunda caixa de combinação,
+é selecionada uma função que determina como exatamente
+os dados selecionados serão processados. A lista de
+Campos disponíveis dependem da área de análise selecionada.
+Movendo os campos de dados na área de informações do resumo,
+você pode especificar quais dados serão apresentados em
+linhas e colunas da tabela dinâmica (ou no eixo x
+e ordenar, se os dados forem apresentados como um gráfico cumulativo).
+
+Exemplo:
+
+Suponha que você precise visualizar um resumo de todos os contratantes inseridos no sistema,
+levando em consideração seus tipos e países de localização. Para isto:
+
+ * Na área de análise, selecione *Contas*.
+ * Na configuração, selecione o campo *Tipo de conta* e mova-o para o cabeçalho da tabela futura.
+ * Na configuração, selecione o campo *País* e mova-o para a esquerda da primeira coluna da tabela futura.
+ * Na primeira caixa de combinação, especifique o método de apresentação de dados, por exemplo, o mapa de calor.
+ * Na segunda caixa de combinação, selecione a função *Quantidade*.
+
+image:spots table.png[Create a summary]
+
+Os mesmos dados podem ser apresentados na forma de um gráfico, o mesmo resumo é mostrado na forma de um histograma com acumulação:
+
+image:Bar chart.png[Create a histogram summary]
+
+
+== Exibindo Dashboard Spots
+
+Assim como os Spots, os Spots podem ser exibidos na página principal no dashlet correspondente.
+
+As seguintes opções estão disponíveis ao configurar o dashlet Summary:
+
+Título :: Você pode inserir o título do seu dashlet ou deixar o padrão.
+Resumo: selecione o Resumo que será exibido no dashlet.
+Resumo personalizado :: Especifique esta opção se desejar modificar os parâmetros Resumo diretamente do dashlet.
+
+== Gerenciar informações resumidas
+
+No módulo, você pode executar as seguintes ações:
+
+* Para classificar a lista de registros, para fazer isso, clique no ícone no cabeçalho da coluna a ser classificada, clique no ícone novamente para retornar a lista.
+* Edição ou exclusão de informações sobre vários boletins de uma só vez; para isso, use link:../../introduction/user-interface/record-management/#_mass_updating_records[mass update panel].
+*	link:../../introduction/user-interface/record-management/#_exporting_records[Export] registros, para isso no menu acima dos registros selecionados, selecione *Exportar*. 
+* Veja informações detalhadas sobre o resumo, para fazer isso, clique no nome do Spot na lista geral.
+* Para editar os dados, para isso, no formulário de exibição, clique no botão btn: [Edit] ou diretamente no formulário de lista, clique no botão à esquerda do registro que está sendo editado. Você também pode seguir o link:../../introduction/user-interface/[quick edit].
+* Exclua o boletim, para fazer isso, clique no botão btn:[Excluir].
+* Rastreando alterações nas informações inseridas, para isso, clique no botão btn: [View change log] no formulário de visualização. Se for necessário alterar a lista de campos controlados no diário, faça-o no Studio, definindo link:../../../admin/administration-panel/studio/#_fields[*Audit*] do campo correspondente.
