@@ -1,58 +1,290 @@
 ---
-Title: Casos
-Weight: 200
+Title: Campanhas
+Weight: 190
 ---
 
-= Casos
+:imagesdir: ./../../../images/en/user
+:experimental:   ////this is here to allow btn:[]syntax used below
 
-No SuiteCRM, os Casos são usados ​​para registrar interações com os Clientes quando
-eles solicitam ajuda ou aconselhamento, por exemplo, em uma função de Vendas ou Suporte.
-Um caso pode ser criado, atualizado quando um usuário estiver trabalhando nele, atribuído a
-um colega e fechado quando resolvido. Em cada estágio do Caso, o Usuário
-pode rastrear e atualizar o segmento de conversa para que um registro claro do que ocorreu seja registrado no CRM. Casos podem ser
-relacionados a registros individuais, como contas, contatos e bugs.
+:toc: 
+
+= Campanhas
+
+== Visão geral
+
+O módulo Campanhas no *SuiteCRM* pode ser uma ferramenta muito poderosa de marketing e publicidade para sua organização, permitindo que você crie e rastreie campanhas de marketing baseadas em email e não email (por exemplo, televendas ou rádio) para clientes em potencial ou existentes.
+
+Com as ferramentas de rastreamento integradas ao módulo Campaign, você pode monitorar a resposta que recebe da sua campanha em tempo real, permitindo visualizar o retorno do investimento (ROI) e muitas outras métricas úteis. Isso, por sua vez, ajuda a planejar efetivamente suas atividades estratégicas de marketing e publicidade, visualizando quais campanhas funcionam e quais não.
+
+* Para visualizar a lista completa de campos disponíveis ao criar uma campanha, consulte link:./../../appendix-a/#_campaigns_field_list[Campaign Fields List].
+
+{{% notice note %}} 
+Você precisará configurar suas contas de correio de saída e de devolução para enviar uma campanha baseada em email. Consulte Configurações de email para obter informações sobre como fazer isso.
+
+O email da campanha é enviado usando um trabalho agendado. Você precisará garantir que seu agendador esteja configurado para fazer isso.{{% /notice %}}
+
+== Crie uma campanha
+
+No módulo *Campanhas*, selecione * Criar campanha * na barra lateral ou no menu suspenso do módulo para iniciar o *Assistente de campanha*.
+
+image:CampaignsSidebarCreate.png[title="Creating a Campaign"]
+
+Selecione a campanha que você deseja criar: *Newsletter*, *Email*, link:../surveys/[Survey] (*SuiteCRM 7.10* onwards) ou *Campanha não baseada em email*. As campanhas não baseadas em email permitem manter um registro de todas as campanhas executadas fora do *SuiteCRM* (por exemplo, uma campanha de televendas ou rádio).
+
+image:CampaignTypes.png[title="Select campaign"]
+
+{{% notice note %}} 
+Observe que, para uma campanha de pesquisa, você precisará primeiro criar a pesquisa para anexar à campanha.
+{{% /notice %}}
+
+=== Cabeçalho da campanha
+
+A primeira página de *Assitente de Campaign* é a *Cabeçalho de Camapanha*.
+image:CampaignHeader.png[title="Campaign Header"]
+
+Digite um nome para a campanha aqui e defina o status (*Planejamento*, *Ativo*, *Inativo*, *Concluído*).
+Adicione uma descrição opcional.
+
+A campanha será atribuída ao usuário conectado no momento por padrão. Altere isso aqui, se necessário.
+
+==== Campanha de pesquisa (* SuiteCRM 7.10 * em diante)
+
+Para uma campanha *Pesquisa*, você também precisará relacionar a campanha a uma pesquisa existente. Veja link:../surveys/[Surveys] para obter informações sobre como criar uma pesquisa.
+image:CampaignSurveyHeader.png[title="Select survey for campaign"]
+
+==== Campanha não baseada em email
+
+Para uma campanha *Não baseada em email*, é possível selecionar opcionalmente o tipo de campanha.
+
+image:CampaignsNonEmailTypes.png[title="Add type for non-email based campaign"]
+
+==== Orçamento da campanha
+Role para baixo para concluir os detalhes opcionais do orçamento da campanha. Esses números são usados ​​nos cálculos de ROI.
+
+Para campanhas não baseadas em email, esta seção está na próxima página.
+
+image:CampaignBudget.png[title="Campaign Budget"]
+
+Clique em btn:[NEXT] na parte superior da tela para continuar.
+
+=== Listas de Targets
+
+O próximo passo é especificar sua *Target List(s)*.
+Quaisquer listas de Targets existentes serão listadas para você selecionar em *Adicionar lista de Targets existentes*.
+
+Clique no nome da lista de targets para adicioná-lo à campanha. As listas de targets adicionadas à campanha serão exibidas no painel direito.
+
+Para remover uma lista de targets, clique em btn:[Rem]
+
+image:CampaignsTargetList.png[title="Target Lists"]
+
+==== Criar lista de destinos
+
+Se você ainda não criou uma lista de destinos ou deseja usar uma nova lista, é possível criar uma lista vazia aqui e preenchê-la depois de concluir o restante da configuração da sua campanha. Veja link:../target-lists/[Target Lists] para obter mais informações sobre os tipos de listas e como usá-las.
+
+image:80E-mail_campaign.png[title="Target list"]
+
+Digite um nome para a nova lista e selecione o tipo na lista. Observe que você precisará ter pelo menos uma lista de destinos do tipo "padrão" anexada à campanha.
+
+Click btn:[CREATE]
+
+=== Modelos
+
+O modelo é a mensagem que será enviada para sua lista de destinos. Você pode selecionar ou editar um modelo de email existente ou criar um novo aqui. Consulte a seção Modelos de email do guia do usuário para obter mais informações.
+
+{{% notice tip %}}O editor de modelos usado para criar e editar modelos de email pode ser selecionado em link:../../introduction/managing-user-accounts/#_user_profile_email_settings[user profile email settings]. A configuração padrão (Mozaik) é mostrada nas seguintes capturas de tela. {{% /notice %}}
+
+image:81Campaign_template.png[title="Campaign Wizard Template"]
+
+* *Selecione um modelo existente* - Você pode selecionar em uma lista suspensa de modelos de email existentes
+* *Crie um novo modelo* - Crie um novo modelo de email do zero.
+* *Copiar um modelo existente* - Permite selecionar um modelo existente e usá-lo como base para fazer alterações
+
+O editor de modelos de email no rodapé da página mostra como será o seu modelo.
+Arraste e solte diferentes componentes de layout do painel esquerdo no painel de exibição do lado direito, onde eles podem ser editados.
+image:Email_Template_Editor.png[title="Email Template Editor"]
+
+Clicar em um componente mostrará o menu de edição. Isso fornece várias opções adicionais que permitem personalizar o layout e a aparência do seu modelo. O tipo de fonte pode ser selecionado, formatado, as cores alteradas, o alinhamento de texto escolhido, imagens e até vídeos podem ser inseridos.
+
+image:85Campaign_template.png[title="WYSIWYG editor"]
+
+{{%notice tip%}}Insira o HTML clicando em Ferramentas -> Código Fonte{{%/notice%}}
+
+==== Variáveis ​​de email
+
+image:84Campaign_template.png[title="Email variables"]
+
+=== URLs de Rastreador
+
+Os URLs de rastreador podem ser usados ​​para inserir um link no site da sua organização ou um link direto para um novo produto que você lançou, por exemplo. Um ID exclusivo é adicionado ao link para cada destinatário, permitindo que o *SuiteCRM* rastreie o clique. As informações coletadas podem ser visualizadas na página de status da campanha.
+
+image:83Campaign_template.png[title="Tracker URL"]
+
+Para adicionar seu próprio link de URL do rastreador, clique em btn: [CREATE TRACKER]
+
+image:CampaignsCreateTracker2.png[title="Create tracker"]
+
+Especifique o texto a ser exibido como o link e o URL.
+
+Clique em btn: [CREATE TRACKER]
+
+Adicione seu rastreador (s) ao modelo da mesma maneira que para uma variável. Clique dentro do modelo no local desejado, selecione o rastreador no menu suspenso e clique em btn: [INSERIR TRACKER]
+
+==== Optar por excluir URLs do rastreador
+
+Um link de desativação permite que o destinatário exclua futuros e-mails de marketing, e um link de desativação padrão será adicionado automaticamente ao modelo. Você pode substituir esse padrão pelo seu próprio texto de link Opt Out adicionando um Tracker Opt Out personalizado.
+Clique em btn:[CREATE TRACKER]
+
+image:CampaignsOptOutTracker.png[title="Create opt out tracker"]
+
+Especifique o texto necessário para o seu link de desativação.
+
+Marque a caixa Opt-Out Link. Observe que você não pode editar o próprio TrackerURL, apenas o texto do link.
+
+Adicione seu rastreador ao modelo da mesma maneira que para uma variável. Clique dentro do modelo no local desejado, selecione o rastreador no menu suspenso e clique em btn:[INSERIR TRACKER]
+
+Quando o seu modelo de email estiver completo, clique em btn:[SAVE].
+
+Clique em btn:[NEXT] na parte superior da página para continuar.
+
+=== Marketing
+
+A seção Marketing do Assistente de campanha é onde você precisa especificar as configurações de email da campanha e definir uma programação para o envio de emails.
+
+image:CampaignsMarketing.png[title="Campaign Wizard Marketing"]
+
+[cols="20,80", frame = "none", grid = "none"]
+|===
+|*Nome da Campanha de Marketing *| Digite um nome para esta execução da campanha. Isso permite reenviar a campanha posteriormente para uma lista de destinos diferente ou com um modelo modificado. A campanha armazenará detalhes de status separados para cada registro de marketing, e eles podem ser selecionados na página de status da campanha.
+|*Conta de Manipulação de Devoluções*| Selecione a conta configurada para lidar com o correio da campanha devolvido.
+|*Conta de email de saída*| Isso assumirá como padrão a conta de email de saída do sistema. Se você tiver outro correio de saída.
+|*Data e hora agendadas*| Os e-mails da campanha serão colocados na fila para envio no horário especificado e serão enviados quando o trabalho agendado *Executar campanhas noturnas em massa por e-mail* for executado em seguida.|===
+
+Depois que os detalhes forem concluídos, clique em btn: [NEXT] na parte superior da tela para continuar.
+
+=== Enviar email e resumo
+
+A página Resumo inclui uma lista de verificação que indica se cada seção do Assistente de Campanha foi ou não concluída satisfatoriamente. 
+
+[cols="20,80", frame = "none", grid = "none"]
+|===
+|image:CampaignsGreenTick.png[title="Campaign section completed"]|Se uma seção estiver concluída, isso será mostrado com o ícone de visto verde.
+|image:CampaignsRedCross.png[title="Campaign section incomplete"]|Seções incompletas são mostradas com uma cruz vermelha. Isso precisará ser resolvido antes que a campanha possa ser enviada.
+|===
+
+image:CampaignsSummary.png[title="Campaign Summary"]
+
+No exemplo acima, a seção *Escolher Target* não foi concluída corretamente, conforme indicado pelo ícone de cruz vermelha. Isso seria resolvido especificando uma
+lista de Targets do tipo 'padrão' com pelo menos uma entrada.
+Clique em qualquer entrada incompleta da lista para navegar até a seção relevante.
+
+Depois de garantir que todas as seções sejam concluídas, você tem três opções:
+
+* *Enviar email no horário agendado* - Depois de ter certeza de que todas as seções da campanha estão definidas corretamente e o status da sua campanha está definido como *Ativo*, clique para enviar os e-mails da campanha. O email será colocado na fila no horário agendado e será enviado aos destinatários quando a tarefa agendada *Executar campanhas de email em massa noturnas* for executada na próxima vez.
+* *Enviar email de marketing como teste* - Se você especificou uma lista de destinos do tipo 'teste', isso enviará a campanha apenas para os endereços na lista de testes. Ao fazer isso, você pode visualizar a campanha como destinatária e verificar se ela aparece como deveria antes de enviá-la a destinatários reais. As entradas de teste (visualizações, cliques etc) geradas podem ser removidas posteriormente na página <<Status da campanha e acompanhamento de respostas, status da campanha>>.
+* *Visualizar detalhes* - Mostra a Visualização detalhada da campanha que você acabou de criar.
+
+== Status da campanha e acompanhamento de respostas
+Na visualização de detalhes da campanha, clique em btn:[VIEW STATUS]
+
+[cols="60,40", frame = "none", grid = "none"]
+|===
+|OU, no modo de exibição Lista, clique no ícone de status|image:CampaignsViewStatusIcon.png[title="Status icon"]
+|===
+
+A página de status da campanha fornece uma visão geral dos detalhes da campanha, além de uma representação gráfica da resposta da sua campanha. Isso inclui o número de mensagens enviadas, mensagens devolvidas, número de visualizações, cancelamentos e cliques. 
+
+image:CampaignStatus3.png[title="Campaign status"]
+
+Informações detalhadas podem ser visualizadas nos subpainéis abaixo do gráfico, onde as respostas são detalhadas em um nível de registro individual. Aqui você pode ver quem visualizou seu e-mail ou clicou em um link ou como eles responderam a uma pesquisa, por exemplo.
+
+image:CampaignsStatusViewedMessage.png[title="Viewed messages"]
+
+Se a campanha incluir um formulário <<Web to Person>>, você poderá ver os detalhes de todos os leads criados por meio do formulário na web no subpainel *Leads Criados*.
+
+image:CampaignsLeadsCreated.png[title="Campaign Leads created"]
+
+Esses registros podem ser adicionados a uma nova lista de destinos, clicando em btn:[Adicionar à lista de destinos] Permite criar novas campanhas mais focadas, com base em quem respondeu.
+
+[discrete]
+=== Excluir entradas de teste
+
+Clique em btn:[EXCLUIR ENTRADAS DE TESTE] para remover todas as entradas na página de status da campanha que foram geradas durante o teste com um tipo de 'teste' link:../target-lists/[target list]. 
+
+== Acompanhamento do ROI da campanha
+
+O rastreamento do ROI da campanha interno pode ser visualizado na exibição de detalhes ou status da campanha, clicando em btn:[VIEW ROI]
+
+Esta página fornece uma representação gráfica do retorno do investimento da sua campanha, permitindo visualizar facilmente como o dinheiro gasto na campanha se traduz em potencial
+do negócio. 
+
+image:CampaignsROIChart.png[title="Return on Investment details"]
+
+{{%notice tip%}}Adicione ou edite os detalhes do orçamento da campanha clicando em Assistente de Ativação e navegando até a guia Cabeçalho da Campanha.{{%/notice%}}
+
+== Formulário Web To Person 
+
+O recurso *Criar formulário de pessoa* permite criar um formulário baseado na Web que criará um
+link:../leads/[Lead], link:../contacts/[Contact] or link:../targets/[Target] gravar em *SuiteCRM*
+a partir das informações enviadas no formulário da web. Esses registros podem ser atribuídos a um usuário específico e estão vinculados a uma campanha para que as respostas possam ser rastreadas.
+
+{{%notice note%}}Você precisará relacionar seu formulário da Web a pessoa a uma campanha existente.
+Veja  <<#_create_a_campaign, Create a Campaign>> para obter instruções sobre como fazer isso. Uma campanha do tipo não baseada em email é adequada para isso{{%/notice%}}
+
+Clique em *Criar formulário de pessoa* na barra lateral ou selecione *Criar formulário de pessoa* no menu suspenso *Campanhas* para abrir o assistente.
+
+image:CampaignsSidebarCreateForm.png[title="Create Person Form"]
+
+[discrete]
+=== Assistente para Criar Formulário de Pessoa
+
+Selecione o tipo de registro que você deseja criar a partir das informações do formulário da web: *Lead*, *Contact* ou *Target*, no menu suspenso na parte superior. A lista de campos disponíveis será atualizada automaticamente após sua seleção. Use a barra de rolagem para ver a lista completa dos campos disponíveis.
+
+image:CampaignsCreatePerson1.png[title="Create Person Form - select fields"]
+
+Arraste e solte os campos que deseja incluir no formulário nas colunas vazias. Você tem a opção de um layout de uma ou duas colunas. Você deve incluir todos os campos obrigatórios (estes são indicados com um asterisco * e são destacados na lista).
+
+Clique em btn: [ADD ALL FIELDS] para adicionar todos os campos disponíveis ao formulário. Clicar em btn: [RESET ALL FIELDS] removerá todos os campos das colunas de layout.
+
+image:CampaignsCreatePerson2.png[title="Create Person Form - select fields"]
+
+Depois que os campos obrigatórios forem adicionados, clique em btn:[NEXT] para continuar.
+
+[discrete]
+==== Criar formulário de pessoa - informações adicionais
+
+image:CampaignsCreatePerson3.png[title="Additional information"]
+
+Configure a aparência do formulário da Web adicionando um cabeçalho ou rodapé e alterando o rótulo do botão de envio do formulário, se desejado.
+
+*URL de redirecionamento*: especifique um link personalizado a ser exibido depois que o formulário for enviado.
+
+*Campanha relacionada*: você deve relacionar o formulário a uma campanha existente. Clique em btn:[SELECT] para selecionar a campanha no pop-up.
+
+Depois de concluído, clique em btn:[GERAR FORMULÁRIO]
+
+[discrete]
+==== Criar formulário de pessoa - Editor
+
+A etapa final do Assistente para criação de formulário de pessoa permite formatar o formulário da Web que você configurou usando o editor.
+O tipo de fonte pode ser selecionado, as cores alteradas, o alinhamento do texto escolhido e as imagens podem ser inseridas.
+Visualize e edite o HTML diretamente, clicando no link HTML na barra de ferramentas.
+
+image:CampaignsCreatePerson4.png[title="Web form"]
+
+Quando estiver satisfeito com a aparência do seu formulário da web, clique em btn: [SALVAR WEB FORM]
+
+[discrete]
+==== Salvar formulário
+Para salvar o formulário da web, você acabou de gerar:
+
+* Clique no link *Web to Person Form* para fazer o download do formulário da Web na sua pasta de downloads *OU*
+* Copie e cole o HTML em uma página da web existente. Observe a linha a ser incluída na seção <head> da página da web.
+
+image:CampaignsCreatePerson5.png[title="Download form"]
+
+{{%notice warning%}}Observe que o formulário da Web não será armazenado em nenhum outro lugar no *SuiteCRM*. Para garantir que o formulário seja salvo, execute uma das duas etapas acima.{{%/notice%}}
 
 
 
-== Ações de Casos
 
-Você pode acessar as ações Contatos no menu suspenso do módulo Casos
-para baixo ou pela barra lateral. As ações de contatos são as seguintes:
-
-* *Criar Casos* - Um novo formulário é aberto na Visualização de edição para permitir que você
-crie um novo registro de Casos.
-* *Exibir contatos* - Redireciona você para a exibição em lista dos contatos
-módulo. Isso permite pesquisar e listar registros de contatos.
-* *Importar contatos* - Redireciona você para o Assistente de importação dos contatos
-módulo. Para mais informações, veja link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records].
-
-Para visualizar a lista completa de campos disponíveis ao criar um registro de Casos, veja
-link:./../../appendix-a/#_cases_field_list[Cases Field List].
-
-Funcionalidade avançada para Casos podem ser encontradas em
-link:./../../advanced-modules/cases-with-portal/[Cases with Portal] neste guia do usuário.
-
-== Gerenciamento de Casos
-
-* *Classificar:* Para classificar registros neste módulo, clique em qualquer título de coluna
-que é classificável. Isso classificará a coluna crescente ou decrescente.
-* *Pesquisar:* Para procurar um registro neste módulo, consulte  link:./../../introduction/user-interface/search[Search] neste guia do usuário.
-* *Atualização em Massa:* Para atualizar alguns ou todos os registros na Exibição em Lista, use o menu 
-Painel de Atualização em Massa, conforme descrito em link:./../../introduction/user-interface/record-management/#_mass_updating_records[Mass Updating Records] neste guia do usuário.
-* *Duplicar:* Para duplicar um registro nesse módulo, você pode clicar no botão Duplicar no
-Visualização de detalhes e salve o registro duplicado.
-* *Mesclar:* Para mesclar registros duplicados, selecione os registros na lista, clique no link Mesclar na lista suspensa de Ações e avance
-através do processo de mesclagem. Para obter mais informações sobre mesclagem de duplicatas,
-veja link:./../../introduction/user-interface/record-management/#_merging_records[Merging Records] neste guia do usuário.
-* *Excluir:* Para excluir um ou vários registros, você pode selecionar vários registros
-na exibição em lista e clique em excluir. Você também pode excluir um Registro na
-Visualização de detalhes clicando no botão Excluir. Para um guia mais detalhado
-para excluir registros, consulte o link:./../../introduction/user-interface/record-management/#_deleting_records[Deleting Records]
-neste guia do usuário.
-* *Ver Detalhes:* Para visualizar os detalhes de um registro desse módulo, clique no campo com hiperlink na Visualização em Lista. Isso abrirá o registro na exibição de detalhes.
-* *Editar:* Para editar os detalhes de um registro desse módulo, clique no ícone Editar na Exibição em lista ou
-clique no botão editar na Visualização de Detalhes, faça as alterações necessárias, e clique em Salvar.
-* *Importar/Exportar:* Para obter um guia detalhado sobre a importação e exportação de registros para esse módulo, consulte o
-link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records] e
-link:./../../introduction/user-interface/record-management/#_exporting_records[Exporting Records] neste guia do usuário.
-* *Log:* Para rastrear todas as alterações nos campos auditados, no registro desse módulo, você pode clicar no botão Visualizar log de alterações na tela de detalhes do contato ou na visualização de Editar.
