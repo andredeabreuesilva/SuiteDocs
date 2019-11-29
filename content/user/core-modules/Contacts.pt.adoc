@@ -31,6 +31,8 @@ Para visualizar a lista completa de campos disponíveis ao criar um contato, vej
 
 == Gerenciando contatos
 
+* *vCard:* Configuração da exportação de contatos no formato vCard: por padrão, a exportação de contatos para o formato vCard não está disponível. O administrador do sistema precisa substituir os campos *Nome* e *Sobrenome* pelo campo *Nome* usando link:../../../admin/administration-panel/studio/#_layouts[Studio], após o qual o botão btn:[vCard] estará disponível à direita do campo *Nome*.
+
 * *Classificar:* Para classificar registros neste módulo, clique em qualquer título de coluna
 que é classificável. Isso classificará a coluna crescente ou decrescente.
 * *Pesquisar:* Para procurar um registro neste módulo, consulte  link:./../../introduction/user-interface/search[Search] neste guia do usuário.
@@ -53,5 +55,3 @@ clique no botão editar na Visualização de Detalhes, faça as alterações nec
 link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records] e
 link:./../../introduction/user-interface/record-management/#_exporting_records[Exporting Records] neste guia do usuário.
 * *Log:* Para rastrear todas as alterações nos campos auditados, no registro desse módulo, você pode clicar no botão Visualizar log de alterações na tela de detalhes do contato ou na visualização de Editar.
-
-* *vCard:* Configuração da exportação de contatos no formato vCard: por padrão, a exportação de contatos para o formato vCard não está disponível. O administrador do sistema precisa substituir os campos *Nome* e *Sobrenome* pelo campo *Nome* usando link:../../../admin/administration-panel/studio/#_layouts[Studio], após o qual o botão btn:[vCard] estará disponível à direita do campo *Nome*.
