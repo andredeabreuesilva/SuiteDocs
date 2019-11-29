@@ -1,0 +1,54 @@
+---
+Title: Reuniões
+Weight: 130
+---
+
+= Reuniões
+
+Como o módulo Chamadas, o módulo Reuniões no SuiteCRM permite que os Usuários
+criar um registro de qualquer Reunião em que tenham participado.
+O agendador de reuniões permite que um usuário convide participantes, e-mails, defina
+lembretes, reagendar e se relacionar com outros módulos, incluindo uma Conta,
+Contato, Projeto e muitos outros Objetos. Este módulo tem muito mais
+funções úteis que ajudam o Usuário a planejar e organizar seus
+Reuniões.
+
+== Ações de Reuniões
+
+Você pode acessar as Ações de Reuniões no menu suspenso do módulo Reuniões
+para baixo ou pela barra lateral. As ações de Reuniões são as seguintes:
+
+* *Criar Reuniões* - Um novo formulário é aberto na Visualização de edição para permitir que você
+crie um novo registro de Reuniões.
+* *Exibir Reuniões* - Redireciona você para a exibição em lista dos registros do módulo Reuniões. Isso permite pesquisar e listar registros de Reuniões.
+* *Importar Reuniões* - Redireciona você para o Assistente de importação de Reuniões. Para mais informações, veja link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records].
+
+Para visualizar a lista completa de campos disponíveis ao criar um registro de Reuniões, veja link:./../../appendix-a/#_meetings_field_list[Meetings Field List].
+
+== Gerenciando Reuniões
+
+* Para reagendar uma reunião, você pode clicar no botão Reagendar na
+Visualização de detalhes de uma reunião. Para um guia detalhado sobre o reagendamento de reuniões, veja link:./../../advanced-modules/reschedule/[Reschedule] sneste guia do usuário.
+
+* *Classificar:* Para classificar registros neste módulo, clique em qualquer título de coluna
+que é classificável. Isso classificará a coluna crescente ou decrescente.
+* *Pesquisar:* Para procurar um registro neste módulo, consulte  link:./../../introduction/user-interface/search[Search] neste guia do usuário.
+* *Atualização em Massa:* Para atualizar alguns ou todos os registros na Exibição em Lista, use o menu 
+Painel de Atualização em Massa, conforme descrito em link:./../../introduction/user-interface/record-management/#_mass_updating_records[Mass Updating Records] neste guia do usuário.
+* *Duplicar:* Para duplicar um registro nesse módulo, você pode clicar no botão Duplicar no
+Visualização de detalhes e salve o registro duplicado.
+* *Mesclar:* Para mesclar registros duplicados, selecione os registros na lista, clique no link Mesclar na lista suspensa de Ações e avance
+através do processo de mesclagem. Para obter mais informações sobre mesclagem de duplicatas,
+veja link:./../../introduction/user-interface/record-management/#_merging_records[Merging Records] neste guia do usuário.
+* *Excluir:* Para excluir um ou vários registros, você pode selecionar vários registros
+na exibição em lista e clique em excluir. Você também pode excluir um Registro na
+Visualização de detalhes clicando no botão Excluir. Para um guia mais detalhado
+para excluir registros, consulte o link:./../../introduction/user-interface/record-management/#_deleting_records[Deleting Records]
+neste guia do usuário.
+* *Ver Detalhes:* Para visualizar os detalhes de um registro desse módulo, clique no campo com hiperlink na Visualização em Lista. Isso abrirá o registro na exibição de detalhes.
+* *Editar:* Para editar os detalhes de um registro desse módulo, clique no ícone Editar na Exibição em lista ou
+clique no botão editar na Visualização de Detalhes, faça as alterações necessárias, e clique em Salvar.
+* *Importar/Exportar:* Para obter um guia detalhado sobre a importação e exportação de registros para esse módulo, consulte o
+link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records] e
+link:./../../introduction/user-interface/record-management/#_exporting_records[Exporting Records] neste guia do usuário.
+* *Log:* Para rastrear todas as alterações nos campos auditados, no registro desse módulo, você pode clicar no botão Visualizar log de alterações na tela de detalhes do contato ou na visualização de Editar.
