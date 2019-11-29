@@ -1,0 +1,104 @@
+---
+Title: Projetos
+Weight: 210
+---
+
+== Projetos
+
+No SuiteCRM, o módulo Projetos permite que o Usuário organize seus
+projetos da organização, rastreando várias tarefas e alocando
+Recursos. Uma vez configurado, um projeto pode ser visualizado na forma de um
+Gráfico de Gantt ou usando a grade do projeto.
+
+== Ações de Projetos
+
+Você pode acessar as Ações de Projetos no menu suspenso do módulo Projetos
+para baixo ou pela barra lateral. As ações de Projetos são as seguintes:
+
+* *Criar Projetos* - Um novo formulário é aberto na Visualização de edição para permitir que você
+crie um novo registro de Projetos.
+* *Exibir Projetos* - Redireciona você para a exibição em lista dos registros do módulo Projetos. Isso permite pesquisar e listar registros de Projetos.
+* *Importar Projetos* - Redireciona você para o Assistente de importação de Projetos. Para mais informações, veja link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records].
+
+Para visualizar a lista completa de campos disponíveis ao criar um registro de Projetos, veja
+link:./../../appendix-a/#_projects_field_list[Projects Field List].
+
+=== Criando projetos
+
+No módulo Projetos, você pode criar, gerenciar e duplicar projetos
+e Tarefas do projeto.
+
+Você pode definir várias tarefas do projeto para cada projeto. Quando você cria
+uma tarefa do projeto, você deve associá-lo a um projeto. Você pode associar
+um projeto com várias atividades, contas, oportunidades e casos.
+Você também pode criar projetos e tarefas de projeto a partir dos detalhes de uma página de email.
+
+. Na barra de ações, clique em Criar projeto.
+. Na página Projetos, insira informações para os seguintes campos:
+.. nome. Digite um nome para o projeto.
+.. Status. Na lista suspensa, selecione o status do projeto, como
+Rascunho, Em revisão ou Publicado.
+..  Data de início. Clique no ícone Calendário e selecione o início do projeto
+encontro.
+..  Data final. Clique no ícone Calendário e selecione a data de término do projeto.
+.. Atribuído a. Digite o nome de você que possui o projeto.
+Por padrão, ele é atribuído a você.
+..  Prioridade. Na lista suspensa, selecione a importância do
+Projeto como Baixo, Médio ou Alto.
+..  Descrição. Digite uma breve descrição do projeto.
+. Clique em Salvar para criar o projeto; clique em Cancelar para sair da página
+sem criar o projeto.
+
+Quando você salva o projeto, a página de detalhes do projeto é exibida no
+página.
+
+Nesta página, você pode relacionar o projeto a registros como Contatos
+e oportunidades.
+
+=== Criando tarefas do projeto
+
+. No subpainel Tarefas do projeto, clique em Criar.
+. Na página Tarefas do Projeto, insira informações para os seguintes
+Campos:
+.. nome. Digite um nome para a tarefa.
+.. ID da tarefa. Digite um valor numérico como o número de identificação da tarefa.
+..  Data de início. Clique no ícone Calendário e selecione a data em que o
+a tarefa está prevista para começar.
+.. Data de término. Clique no ícone Calendário e selecione uma data em que a tarefa
+deve ser concluído; digite a hora de início no campo adjacente.
+.. Porcentagem concluída. Digite um valor numérico para indicar qual
+porcentagem da tarefa foi concluída.
+..  Prioridade. Na lista suspensa, selecione um nível de prioridade que
+reflete a importância de concluir esta tarefa.
+..  Marco histórico. Marque esta caixa se a conclusão desta tarefa for
+considerado um marco para a conclusão do projeto.
+..  Nome do Projeto. Clique em Selecionar e escolha o projeto associado ao
+a tarefa.
+..  Descrição. Digite uma breve descrição da tarefa.
+. Clique em Salvar para criar a tarefa; clique em Cancelar para retornar ao projeto
+página de detalhes sem criar a tarefa.
+
+== Gerenciamento de Projetos
+
+* *Classificar:* Para classificar registros neste módulo, clique em qualquer título de coluna
+que é classificável. Isso classificará a coluna crescente ou decrescente.
+* *Pesquisar:* Para procurar um registro neste módulo, consulte  link:./../../introduction/user-interface/search[Search] neste guia do usuário.
+* *Atualização em Massa:* Para atualizar alguns ou todos os registros na Exibição em Lista, use o menu 
+Painel de Atualização em Massa, conforme descrito em link:./../../introduction/user-interface/record-management/#_mass_updating_records[Mass Updating Records] neste guia do usuário.
+* *Duplicar:* Para duplicar um registro nesse módulo, você pode clicar no botão Duplicar no
+Visualização de detalhes e salve o registro duplicado.
+* *Mesclar:* Para mesclar registros duplicados, selecione os registros na lista, clique no link Mesclar na lista suspensa de Ações e avance
+através do processo de mesclagem. Para obter mais informações sobre mesclagem de duplicatas,
+veja link:./../../introduction/user-interface/record-management/#_merging_records[Merging Records] neste guia do usuário.
+* *Excluir:* Para excluir um ou vários registros, você pode selecionar vários registros
+na exibição em lista e clique em excluir. Você também pode excluir um Registro na
+Visualização de detalhes clicando no botão Excluir. Para um guia mais detalhado
+para excluir registros, consulte o link:./../../introduction/user-interface/record-management/#_deleting_records[Deleting Records]
+neste guia do usuário.
+* *Ver Detalhes:* Para visualizar os detalhes de um registro desse módulo, clique no campo com hiperlink na Visualização em Lista. Isso abrirá o registro na exibição de detalhes.
+* *Editar:* Para editar os detalhes de um registro desse módulo, clique no ícone Editar na Exibição em lista ou
+clique no botão editar na Visualização de Detalhes, faça as alterações necessárias, e clique em Salvar.
+* *Importar/Exportar:* Para obter um guia detalhado sobre a importação e exportação de registros para esse módulo, consulte o
+link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records] e
+link:./../../introduction/user-interface/record-management/#_exporting_records[Exporting Records] neste guia do usuário.
+* *Log:* Para rastrear todas as alterações nos campos auditados, no registro desse módulo, você pode clicar no botão Visualizar log de alterações na tela de detalhes do contato ou na visualização de Editar.
