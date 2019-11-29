@@ -1,0 +1,62 @@
+---
+Title: Email Modelos
+Weight: 140
+---
+:experimental:   ////this is here to allow btn:[]syntax used below
+
+:imagesdir: /images/en/user
+
+:toc:
+
+== visão global
+
+Modelos de email são usados ​​para enviar respostas e notificações padronizadas por email. A adição de variáveis ​​permite que você personalize essas comunicações e inclua informações adicionais relevantes, como detalhes do pedido.
+
+A partir do *SuiteCRM* 7.9.x, os Modelos de email podem ser visualizados, editados e criados a partir do módulo *Email Modelos*, que pode ser encontrado no menu *ALL*. Como alternativa, os Modelos podem ser criados pelo usuário diretamente dos módulos de Fluxo de Trabalho e Campanhas.
+
+{{% notice tip %}}O editor de modelos usado para criar e editar Modelos de email pode ser selecionado em link:../../introduction/managing-user-accounts/#_user_profile_email_settings[user profile email settings]. A configuração padrão (Mozaik) é mostrada nas seguintes capturas de tela. {{% /notice %}}
+
+image:300EmailsModelos.png[Email Modelos] 
+
+Existem vários modelos * System * padrão criados na instalação.
+Eles são usados ​​para enviar notificações do sistema, como novas senhas ou atualizações de caso.
+Estes podem ser visualizados e editados aqui, juntamente com os modelos gerados pelos usuários. Modelos criados aqui também pode ser usado em link:../../advanced-modules/workflow[Workflows] and 
+link:../campaigns[Campaigns] por exemplo, bem como para notificações do sistema.
+
+Clique no nome do modelo para visualizá-lo.
+
+Para editar um modelo existente, abra o modelo e selecione *Editar* no menu *Ações*,
+ou clique no ícone de lápis à esquerda do nome do modelo. Uma vez no modo *Editar*,
+o modelo pode ser editado da mesma maneira que a criação de um modelo.
+
+== Criando um modelo de email
+
+Selecione *Criar modelo de email* na barra lateral. Essa exibição *Criar* também será exibida se você optar por criar um modelo em outro módulo, como o link:../../advanced-modules/workflow[Workflows], por exemplo.
+
+Selecione *E-mail*, *Campanha* ou *Sistema*, dependendo do uso do modelo. *Sistema* Os modelos são usados ​​para enviar notificações geradas pelo sistema, como atualizações de casos.
+
+image:301EmailsNewTemplate.png[New email template]
+
+=== Corpo
+
+Para adicionar texto ao corpo do modelo, clique, arraste e solte um dos layouts da seleção no painel esquerdo para dentro do corpo. Você pode adicionar quantas seções de layout forem necessárias. Substitua o texto de demonstração destacando-o primeiro.
+
+=== Adicionando variáveis
+
+Para adicionar uma variável, selecione o módulo e o nome do campo apropriados nas listas suspensas. O nome da variável correspondente será exibido no último campo.
+image:302EmailsInsertVariable.png[Insert template variable]
+
+Você pode inserir essa variável manualmente ou clicar em btn:[INSERT] para inserir a variável no ponto do cursor. Variáveis ​​podem ser adicionadas à linha de assunto, bem como ao corpo do modelo de email.
+image:303EmailsInsertVariable2.png[Template variable in subject and body]
+
+
+=== Anexos
+
+[cols="20,80",frame="none", grid="none"]
+|===
+|image:304EmailsTemplateAttachment.png[Template attachments]|Clique em btn:[BROWSE] para anexar um arquivo externo ou em btn:[DOCUMENT] para anexar um documento *SuiteCRM* ao modelo. Outros itens podem ser anexados da mesma maneira. Os arquivos anexados serão enviados a todos os destinatários do modelo.
+|===
+
+=== Grupos de Segurança
+
+Restrinja o acesso a um modelo selecionando um Grupo de Segurança.
