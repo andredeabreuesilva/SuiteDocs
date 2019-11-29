@@ -10,15 +10,13 @@ de chamadas telefônicas de entrada e saída das quais eles podem participar.
 
 == Ações de Chamadas
 
-Você pode acessar as ações Contatos no menu suspenso do módulo Chamadas
-para baixo ou pela barra lateral. As ações de contatos são as seguintes:
+Você pode acessar as Ações de Chamada no menu suspenso do módulo Chamadas
+para baixo ou pela barra lateral. As ações de Chamadas são as seguintes:
 
 * *Log Chamadas* - Um novo formulário é aberto na Visualização de edição para permitir que você
 crie um novo registro de Chamadas.
-* *Exibir contatos* - Redireciona você para a exibição em lista dos contatos
-módulo. Isso permite pesquisar e listar registros de contatos.
-* *Importar contatos* - Redireciona você para o Assistente de importação dos contatos
-módulo. Para mais informações, veja link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records].
+* *Exibir Chamadas* - Redireciona você para a exibição em lista das Chamadas. Isso permite pesquisar e listar registros de Chamadas.
+* *Importar Chamadas* - Redireciona você para o Assistente de importação das Chamadas. Para mais informações, veja link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records].
 
 Para visualizar a lista completa de campos disponíveis ao criar uma Chamadas, veja
 link:./../../appendix-a/#_calls_field_list[Calls Field List].
@@ -46,7 +44,7 @@ clique no botão editar na Visualização de Detalhes, faça as alterações nec
 * *Importar/Exportar:* Para obter um guia detalhado sobre a importação e exportação de registros para esse módulo, consulte o
 link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records] e
 link:./../../introduction/user-interface/record-management/#_exporting_records[Exporting Records] neste guia do usuário.
-* *Log:* Para rastrear todas as alterações nos campos auditados, no registro desse módulo, você pode clicar no botão Visualizar log de alterações na tela de detalhes do contato ou na visualização de Editar.
+* *Log:* Para rastrear todas as alterações nos campos auditados, no registro desse módulo, você pode clicar no botão Visualizar log de alterações na tela de detalhes do Chamada ou na visualização de Editar.
 
 * *Fechar:* Para fechar uma chamada, clique no ícone 'x' na tela da lista de chamadas. Você pode
 Também feche uma chamada clicando no botão Fechar na visualização de detalhes de uma
