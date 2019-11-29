@@ -1,0 +1,64 @@
+---
+Title: Contas
+Weight: 70
+---
+
+= Contas
+
+O módulo Contas é a base centralizada a partir da qual você pode criar uma
+associação com a maioria dos registros no SuiteCRM. É possível criar um
+relacionamento com contatos, leads convertidos, oportunidades, qualquer atividade
+como E-mails ou Reuniões e Casos. Contas no SuiteCRM serão o lugar onde
+normalmente se mantém todas as informações específicas de uma empresa com quem sua
+organização terá um relacionamento comercial. Em termos do mundo real, um
+a conta pode ser uma entidade comercial que seja um prospect de vendas qualificado,
+Cliente, Fornecedor ou Revendedor e pode ser usado para rastrear todas
+interações que ocorrem entre essas entidades e sua organisação.
+
+== Ações de contas
+
+Você pode acessar as ações das contas no menu suspenso do módulo Contas
+para baixo ou pela barra lateral. As ações de Contas são as seguintes:
+
+* * Criar conta * - Uma vez clicado, um novo formulário é aberto em Editar  para
+ criar um novo registro de conta.
+* * Exibir contas * - Uma vez clicado, você será redirecionado para a exibição de lista
+para o módulo Contas. Isso permite pesquisar e listar os registros de contas.
+* * Importar contas * - Redireciona você para o
+módulo de Assistente de importação das contas.
+
+Para mais informações, vejalink:./../../introduction/user-interface/record-management/#_importing_records[Importing Records].
+
+Para visualizar a lista completa de campos disponíveis ao criar uma conta, consulte link:./../../appendix-a/#_accounts_field_list[Accounts Field List].
+
+== Gerenciamento de contas
+
+* Para classificar registros na Visualização da lista de contas, clique em qualquer título da coluna
+que seja classificável. Isso classificará a coluna crescente ou
+decrescente.
+* Para procurar uma conta, consulte o link:./../../introduction/user-interface/search[Search] seção deste
+guia de usuario.
+* Para atualizar algumas ou todas as contas na exibição em lista, use o recurso Mass
+Painel de atualização, conforme descrito em link:./../../introduction/user-interface/record-management/#_mass_updating_records[Mass Updating Records] neste guia do usuário.
+* Para duplicar uma conta, você pode clicar no botão Duplicar no
+Visualização de detalhes e salve o registro duplicado.
+* Para mesclar contas duplicadas, selecione os registros na lista de contas
+Ver, clique no link Mesclar na lista suspensa Ações e avance
+através do processo de mesclagem. Para obter mais informações sobre mesclagem de duplicatas,
+veja o link:./../../introduction/user-interface/record-management/#_merging_records[Merging Records] neste guia do usuário.
+*Para excluir uma ou várias contas, você pode selecionar vários registros
+na exibição em lista e clique em excluir. Você também pode excluir uma conta na
+Visualização de detalhes clicando no botão Excluir. Para um guia mais detalhado
+para excluir registros, consulte o link:./../../introduction/user-interface/record-management/#_deleting_records[Deleting Records]
+neste guia do usuário.
+* Para visualizar os detalhes de uma conta, clique no nome da conta na lista
+Visão. Isso abrirá o registro na exibição de detalhes.
+* Para editar os detalhes da conta, clique no ícone Editar na Exibição em lista ou
+clique no botão editar na visualização de detalhes, faça as alterações necessárias,
+e clique em Salvar.
+* Para um guia detalhado sobre importação e exportação de contas, consulte o
+link:./../../introduction/user-interface/record-management/#_importing_records[Importing Records] e
+link:./../../introduction/user-interface/record-management/#_exporting_records[Exporting Records] neste guia do usuário.
+* Para rastrear todas as alterações nos campos auditados, no registro da conta, você pode
+clique no botão Visualizar log de alterações na tela de detalhes da conta ou em Editar
+Visão.
