@@ -1,0 +1,53 @@
+---
+Title: Funcionários
+Weight: 230
+---
+
+
+:experimental: //// this is here to allow btn:[] syntax used below
+
+:imagesdir: /images/en/user
+
+
+= Funcionários
+
+
+TEsse módulo é usado para gerenciar informações sobre os funcionários da sua organização.
+O acesso ao módulo é feito pelo menu do usuário, que é exibido no canto superior direito de cada página:
+
+image:AdminPanelOpenEmployee.png[Employees in the user menu]
+
+Todos os usuários adicionados ao sistema através do painel Administrador são automaticamente registrados nele e como funcionários.
+
+image:Employees.png[Employees]
+
+
+Funcionários adicionados originalmente ao sistema por meio do módulo *Funcionários*:
+eles serão exibidos na lista de funcionários, mas não poderão se registrar
+no sistema até que o login e a senha necessários sejam atribuídos a eles.
+Assim, neste módulo, pode ser apresentada a lista completa de funcionários da sua organização,
+incluindo funcionários que não estão empregados no SuiteCRM.
+
+== Insira as informações do funcionário
+
+ . No menu do usuário, selecione *Funcionários*
+ . No menu do módulo, selecione *Criar funcionário*.
+ . Digite as informações necessárias sobre o funcionário.
+ . Pressione o botão btn:[Salvar] para salvar as informações do funcionário ou o botão btn:[Cancelar]
+ para retornar à lista de funcionários sem salvar as informações inseridas.
+
+
+Você pode fazer o seguinte com registros de funcionários:
+
+
+Pesquisa de funcionários :: Use
+link:../../introduction/user-interface/search[Filters or Advanced Filters] no formulário de lista de módulos.
+Visualizando detalhes do funcionário: para fazer isso, clique no nome do funcionário na lista geral.
+
+link:../../introduction/user-interface/record-management/#_exporting_records[Export] registros ::
+Para fazer isso, selecione as entradas necessárias no formulário da lista e selecione o item * Exportar * no menu acima das entradas selecionadas.
+Excluir registros de funcionários :: TPara fazer isso, clique no botão btn:[Excluir] na exibição de formulário.
+Atualizando informações sobre vários funcionários de uma vez: Para fazer isso, use
+link:../../introduction/user-interface/record-management/#_mass_updating_records[mass update panel].
+
+
