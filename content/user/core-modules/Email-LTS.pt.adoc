@@ -1,0 +1,26 @@
+---
+Title: Emails - LTS
+Weight: 140
+---
+
+= Emails
+
+O módulo Emails no SuiteCRM permite que os usuários visualizem, armazenem, componham, enviem
+e recebam e-mails de sua própria conta de e-mail pessoal ou de uma conta compartilhada
+caixa de entrada, por exemplo, uma caixa de entrada Suporte ou Vendas. Os e-mails podem estar relacionados a Contas, Casos, Contatos e muitos mais registros no CRM.
+
+== Ações de E-mail
+
+Você pode acessar as ações de Emails no menu suspenso do módulo Emails
+ou através da barra lateral. As ações de email são as seguintes:
+
+* *Ver meu e-mail* - Redireciona você para sua caixa de correio para que você possa ver e
+gerenciar e-mails exibidos / importados para o CRM.
+* *Criar Modelo de Email* - Um editor WYSIWYG onde você pode criar Emails
+arrastando e soltando componentes, inserindo variáveis ​​e alterando
+o texto sem formatação.
+* *Ver modelos de email* - Leva você para a página Exibição em lista do seu
+modelos de email existentes. Isso permite pesquisar e listar emails
+Registros de modelo.
+
+Para visualizar a lista completa de campos disponíveis para o módulo Emails, consultelink:./../../appendix-a/#_emails_field_list[Emails Field List].
