@@ -1,0 +1,96 @@
+---
+Title: Bugs
+Weight: 195
+---
+
+
+:experimental: //// this is here to allow btn:[] syntax used below
+
+:imagesdir: /images/en/user
+
+
+= Bugs
+
+Use este módulo para descrever e rastrear Bugs.
+Ao criar um registro de bug, você pode descrever
+em mais detalhes o problema que causou
+link:../cases[cases], e descrever possíveis maneiras de corrigi-lo
+link:../../advanced-modules/knowledgebase[Knowledge Base].
+
+image:Bugs(Errors).png[Bugs]
+
+Os Bugs descritos podem ser absolutamente qualquer coisa:
+eles podem estar vinculados à versão (modelo) de um produto tangível,
+e o lançamento da próxima versão do software.
+Um usuário com acesso administrativo tem a capacidade de alterar a lista de versões disponíveis.
+Depois de descrever o bug, você pode associá-lo à solicitação
+(na forma de visualização usando o subpainel * do Aplicativo *),
+e com a versão disponível do produto (diretamente no formulário de edição de erros).
+
+{{% notice note %}}
+Por padrão, este módulo está oculto. Para exibi-lo, você precisa entrar em contato com um usuário com acesso administrador.
+{{% /notice %}}
+
+Você pode criar uma descrição do bug diretamente no sistema
+ou importar a descrição de um arquivo de texto, informações mais detalhadas
+neste tópico é descrito na seção
+link:../../introduction/user-interface/record-management/#_importing_records[Data import].
+
+== Descrição do bug
+ . No menu do módulo, selecione * Report Bug *.
+ . Na página de descrição do bug, preencha os seguintes campos:
+
+Assunto :: Digite o nome (breve descrição) do Bug.
+Prioridade :: Na lista suspensa, selecione uma prioridade que reflita a urgência de resolver o problema.
+Status :: Na lista suspensa, selecione a opção de status.
+Tipo :: Na lista suspensa, selecione o tipo: Bug ou recurso.
+Fonte :: Na lista suspensa, selecione a fonte de detecção de erros.
+Categoria :: Na lista suspensa, selecione a categoria à qual esse bug pode estar relacionado.
+
+{{% notice tip %}}
+Todos os valores dos campos com listas podem ser editados, se necessário.
+Portanto, se não houver valor necessário na lista suspensa, ele poderá
+ser adicionado no Studio. Para obter mais informações sobre como modificar caixas de listagem, consulte
+link:../../../admin/administration-panel/developer-tools/[Combo box editor].
+{{% /notice %}}
+
+Detectado na versão :: Na lista suspensa,
+selecione a versão do produto em que esse bug foi detectado.
+
+image:Bugs Description.png[Bug Description]
+
+Resolução :: Na lista suspensa, selecione a resolução.
+Corrigido na versão :: Na lista suspensa, selecione a versão do produto em que esse bug foi corrigido.
+Nota :: A lista de versões disponíveis pode ser configurada por usuários com acesso de administração. Para informações detalhadas, consulte a seção
+link:../../../developer/best-practices/[Version control].
+Descrição :: Digite uma descrição completa do problema.
+Log :: Digite as medidas tomadas para resolver o problema.
+
+Atribuído a :: Indique a pessoa designada ao erro do usuário do sistema. Por padrão, você está atribuído a ele.
+
+[start=3]
+. Clique no botão btn:[Salvar] para salvar as informações inseridas;
+ pressione o botão btn:[Cancelar] para retornar à lista de chamadas ou reuniões
+ sem salvar as informações inseridas. Depois de salvar a descrição
+ do erro, você pode associá-lo a casos novos ou existentes, contatos ou contas.
+
+== Gerenciamento de Bug
+
+No módulo, você pode executar as seguintes ações:
+
+* Classificando a lista de registros. Para fazer isso, clique no ícone no cabeçalho da coluna a ser classificada. Para inverter a classificação, clique no ícone novamente.
+* Edição ou exclusão de informações sobre vários Bugs de uma só vez, para este uso link:../../introduction/user-interface/record-management/#_mass_updating_records[mass update panel].
+*	link:../../introduction/user-interface/record-management/#_importing_records[Import] Informações sobre erros, para fazer isso, clique no botão btn:[Import], localizado no menu do módulo.
+*	link:../../introduction/user-interface/record-management/#_merging_records[Merge Duplicates],Para fazer isso, selecione as entradas necessárias no formulário de lista e, no menu de ação, selecione o item * Combinar *.
+*	Veja informações detalhadas sobre o bug, para fazer isso, clique no nome do bug no formulário de lista
+*	Para editar os dados, para esse fim ou no formulário de visualização, clique no botão btn:[Correto], diretamente no formulário de lista e clique no botão à esquerda do registro editado. Você também pode executar link:../../introduction/user-interface/in-line-editing/[Quick edit].
+*	Duplicação de informações sobre erros, para isso, no menu de ação, selecione btn: [Duplicar]. A duplicação é uma maneira conveniente de criar rapidamente registros semelhantes. Você pode alterar as informações duplicadas para criar uma descrição de um novo bug.
+*	Para excluir a descrição do bug, clique no botão btn:[Delete].
+*	Para acompanhar as alterações nas informações inseridas, clique no botão btn: [View Change Log] na forma de visualização. Se o diário precisar alterar a lista de campos controlados - faça-o no Studio, definindo o parâmetro link:../../../admin/administration-panel/developer-tools/[*Аudit*] campo correspondente.
+*	link:../../introduction/user-interface/record-management/#_exporting_records[Export] informações de erro, para isso, selecione os registros necessários no formulário da lista e selecione o item *Exportar* no menu acima dos registros selecionados.
+*	Visualizando e editando informações relacionadas a erros, use para issolink:../../introduction/user-interface/views/[Subpanels].
+*	Arquivamento de emails relacionados ao Bug atual. Para fazer isso, use o botão no formulário Bug no subpainel * Histórico * btn:[Send to Email archive].
+*	Procure informações sobre Bugs - use link:../../introduction/user-interface/search[Filters or Advanced Filters] no formulário de lista de módulos. Para pesquisar apenas seus registros, marque a opção * Meus registros *, para pesquisar Bugs reais (novos, atribuídos, aguardando uma decisão), marque a opção *Atual*.
+
+
+
